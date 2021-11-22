@@ -59,6 +59,8 @@ namespace CrackingTheCodingInterview.Heap
             //swap first and last
             //get rid of last
             //bubble down first
+
+            return 0;
         }
     }
 
@@ -117,6 +119,8 @@ namespace CrackingTheCodingInterview.Heap
             //swap first and last
             //get rid of last
             //bubble down first
+
+            return 0;
         }
         public int GetMin()
         {
