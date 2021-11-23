@@ -7,11 +7,9 @@ namespace CrackingTheCodingInterview
     {
         static void Main(string[] args)
         {
-           LetterCombinationsProblem letterCombinationsProblem = new LetterCombinationsProblem();
-           var ans = letterCombinationsProblem.LetterCombinations("234");
-           foreach(var item in ans){
-               Console.WriteLine(item);
-           }
+            SearchInRotatedSortedArray searchInRotatedSortedArray = new SearchInRotatedSortedArray();
+            var ans = searchInRotatedSortedArray.Search(new int[] { 3,1},1);
+            Console.WriteLine(ans);
         }
     }
 }
