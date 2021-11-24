@@ -7,8 +7,8 @@ namespace CrackingTheCodingInterview
     {
         static void Main(string[] args)
         {
-            SearchInRotatedSortedArray searchInRotatedSortedArray = new SearchInRotatedSortedArray();
-            var ans = searchInRotatedSortedArray.Search(new int[] { 3,1},1);
+            TrappingRainWater trappingRainWater = new TrappingRainWater();
+            var ans = trappingRainWater.Trap(new int[] {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1});
             Console.WriteLine(ans);
         }
     }
