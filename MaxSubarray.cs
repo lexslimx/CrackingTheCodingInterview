@@ -22,4 +22,26 @@ public class MaxSubarray
         }
         return maxSum;
     }
+
+    /**
+    public int MaxSubArray(int[] nums)
+    {
+        int maxSum = int.MinValue;
+
+        for (int i = 0; i < nums.Length; i++)
+        {
+            int currentSum = 0;
+            int j = i;
+            while (j < nums.Length && currentSum + nums[j] >= nums[j])
+            {
+                currentSum += nums[j];
+                j++;
+                maxSum = Math.Max(maxSum, currentSum);
+                Console.WriteLine(maxSum);
+            }
+        }
+
+        return maxSum;
+    }
+    **/
 }
