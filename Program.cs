@@ -1,5 +1,6 @@
 ﻿using System;
 using CrackingTheCodingInterview.Heap;
+using CrackingTheCodingInterview.Nodes;
 
 namespace CrackingTheCodingInterview
 {
@@ -7,11 +8,13 @@ namespace CrackingTheCodingInterview
     {
         static void Main(string[] args)
         {
-            SetMatrixZeros setMatrixZeros = new SetMatrixZeros();
-            setMatrixZeros.SetZeroes(new int[][]
-            {
-                new int[]{0,1}
-            });            
+            PalindromeLinkedList palindromeLinkedList = new PalindromeLinkedList();
+            ListNode listNode = new ListNode(1);
+            listNode.next = new ListNode(2);
+            listNode.next.next = new ListNode(2);
+            listNode.next.next.next = new ListNode(1);
+
+            var ans = palindromeLinkedList.IsPalindrome(listNode);
         }
     }
 }
