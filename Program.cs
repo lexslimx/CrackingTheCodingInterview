@@ -7,8 +7,8 @@ namespace CrackingTheCodingInterview
     {
         static void Main(string[] args)
         {
-            TrappingRainWater trappingRainWater = new TrappingRainWater();
-            var ans = trappingRainWater.Trap(new int[] {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1});
+            MaxSubarray max = new MaxSubarray();
+            var ans = max.MaxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4});
             Console.WriteLine(ans);
         }
     }
