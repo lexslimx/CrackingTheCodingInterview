@@ -7,9 +7,11 @@ namespace CrackingTheCodingInterview
     {
         static void Main(string[] args)
         {
-            MaxSubarray max = new MaxSubarray();
-            var ans = max.MaxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4});
-            Console.WriteLine(ans);
+            SetMatrixZeros setMatrixZeros = new SetMatrixZeros();
+            setMatrixZeros.SetZeroes(new int[][]
+            {
+                new int[]{0,1}
+            });            
         }
     }
 }
