@@ -8,8 +8,8 @@ namespace CrackingTheCodingInterview
     {
         static void Main(string[] args)
         {
-            FirstUniqueCharacter first = new FirstUniqueCharacter();
-            var ans = first.FirstUniqChar("leetcode");
+            ProductOfArrayExceptSelf first = new ProductOfArrayExceptSelf();
+            var ans = first.ProductExceptSelf(new int[]{ -1,1,0,-3,3 });
             Console.WriteLine(ans);       
         }
     }
