@@ -8,8 +8,8 @@ namespace CrackingTheCodingInterview
     {
         static void Main(string[] args)
         {
-            ProductOfArrayExceptSelf first = new ProductOfArrayExceptSelf();
-            var ans = first.ProductExceptSelf(new int[]{ -1,1,0,-3,3 });
+            ThreeSum first = new ThreeSum();
+            var ans = first.Solve(new int[]{ -2,0,0,2,2 });
             Console.WriteLine(ans);       
         }
     }
