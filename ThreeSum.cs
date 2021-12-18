@@ -20,16 +20,9 @@ public class ThreeSum
             while (left < right)
             {
 
-                if (left == i)
-                {
-                    left++;
-                }
-
-                if (right == i)
-                {
-                    right--;
-                }
-
+                if (left == i) left++;
+                if (right == i) right--;
+                
                 if (nums[left] + nums[right] == 0 - nums[i])
                 {
                     List<int> ans = new List<int>() { nums[i] };
