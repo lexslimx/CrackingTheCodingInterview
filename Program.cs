@@ -8,8 +8,8 @@ namespace CrackingTheCodingInterview
     {
         static void Main(string[] args)
         {
-            ThreeSum first = new ThreeSum();
-            var ans = first.Solve(new int[]{ -2,0,0,2,2 });
+            MinimumInSortedArray mn = new MinimumInSortedArray();
+            var ans = mn.FindMinWithSearch(new int[]{4,5,6,7,0,1,2});
             Console.WriteLine(ans);       
         }
     }

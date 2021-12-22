@@ -3,7 +3,7 @@ using CrackingTheCodingInterview;
 
 public class BinaryTreePaths
 {
-    public IList<string> BinaryTreePaths(TreeNode root)
+    public IList<string> SolveBinaryTreePaths(TreeNode root)
     {
         IList<string> list = new List<string>();
         Build(root, "", list);
