@@ -8,13 +8,9 @@ namespace CrackingTheCodingInterview
     {
         static void Main(string[] args)
         {
-            PalindromeLinkedList palindromeLinkedList = new PalindromeLinkedList();
-            ListNode listNode = new ListNode(1);
-            listNode.next = new ListNode(2);
-            listNode.next.next = new ListNode(2);
-            listNode.next.next.next = new ListNode(1);
-
-            var ans = palindromeLinkedList.IsPalindrome(listNode);
+            MinimumInSortedArray mn = new MinimumInSortedArray();
+            var ans = mn.FindMinWithSearch(new int[]{4,5,6,7,0,1,2});
+            Console.WriteLine(ans);       
         }
     }
 }
