@@ -1,6 +1,7 @@
 ﻿using System;
 using CrackingTheCodingInterview.Heap;
 using CrackingTheCodingInterview.Nodes;
+using CrackingTheCodingInterview.Sorting;
 
 namespace CrackingTheCodingInterview
 {
@@ -8,9 +9,14 @@ namespace CrackingTheCodingInterview
     {
         static void Main(string[] args)
         {
-            MinimumInSortedArray mn = new MinimumInSortedArray();
-            var ans = mn.FindMinWithSearch(new int[]{4,5,6,7,0,1,2});
-            Console.WriteLine(ans);       
+            SelectionSort selectionSort = new SelectionSort();
+            int[] ans = selectionSort.Sort(new int[] { 7, 6, 5, 4, 3, 2 });
+
+            for (int i = 0; i < ans.Length; i++)
+            {
+                Console.WriteLine(ans[i]);
+            }
+            
         }
     }
 }
