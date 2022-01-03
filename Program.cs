@@ -9,14 +9,15 @@ namespace CrackingTheCodingInterview
     {
         static void Main(string[] args)
         {
-            SelectionSort selectionSort = new SelectionSort();
-            int[] ans = selectionSort.Sort(new int[] { 7, 6, 5, 4, 3, 2 });
-
-            for (int i = 0; i < ans.Length; i++)
-            {
-                Console.WriteLine(ans[i]);
-            }
-            
+            CourseSchedule courseSchedule = new CourseSchedule();
+            courseSchedule.CanFinish(8, new int[][] {
+                new int[] { 1,0 },
+                new int[] { 2,6 },
+                new int[] { 1,7 },
+                new int[] { 6,4 },
+                new int[] { 7,0 },
+                new int[] { 0,5 },
+            });
         }
     }
 }
