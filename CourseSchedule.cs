@@ -57,9 +57,10 @@ namespace CrackingTheCodingInterview
                 contains.Add(current);
                 foreach(var node in graph[current])
                 {
+                    if (node == current) return true;
                     if (contains.Contains(node))
                     {
-                        return true;
+                        continue;
                     }
                     else
                     {
