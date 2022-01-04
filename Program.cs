@@ -9,8 +9,11 @@ namespace CrackingTheCodingInterview
     {
         static void Main(string[] args)
         {
-            PermutationInString permutationInString = new PermutationInString();
-            permutationInString.CheckInclusion("adc", "dcda");
+            MergeIntervals mergeIntervals = new MergeIntervals();
+            mergeIntervals.Merge(new int[][] { 
+                new int[] { 1, 4 },
+                new int[] { 0,4 }                
+            });
         }
     }
 }
