@@ -9,11 +9,8 @@ namespace CrackingTheCodingInterview
     {
         static void Main(string[] args)
         {
-            MergeIntervals mergeIntervals = new MergeIntervals();
-            mergeIntervals.Merge(new int[][] { 
-                new int[] { 1, 4 },
-                new int[] { 0,4 }                
-            });
+            MajorityElement majorityElement = new MajorityElement();
+            majorityElement.GetMajority(new int[] { 6, 5, 5 });
         }
     }
 }
